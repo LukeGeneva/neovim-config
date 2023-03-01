@@ -71,3 +71,8 @@ vim.api.nvim_create_autocmd(
   "FileType",
   { pattern = { "html", "javascript", "typescript", "json", "typescriptreact", "javascriptreact" }, command = "setlocal shiftwidth=2 softtabstop=2 tabstop=2" }
 )
+
+vim.api.nvim_create_autocmd(
+  "FileType",
+  { pattern = { "text", "markdown" }, command = "setlocal tw=80" }
+)
