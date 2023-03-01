@@ -62,4 +62,6 @@ return require('packer').startup(function(use)
       opt = true,
       run = "npm install --legacy-peer-deps && npm run compile" 
   }
+
+  use 'github/copilot.vim'
 end)
