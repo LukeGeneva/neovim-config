@@ -3,9 +3,9 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
-	'tsserver',
-	'eslint',
-	'rust_analyzer',
+    'tsserver',
+    'eslint',
+    'rust_analyzer',
 })
 
 local cmp = require('cmp')
@@ -17,9 +17,7 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	['<C-Space>'] = cmp.mapping.complete(),
 })
 
-lsp.set_preferences({
-	sign_icons = { }
-})
+lsp.set_preferences({ })
 
 lsp.on_attach(function(client, bufnr)
 	local opts = {buffer = bufnr, remap = false}
