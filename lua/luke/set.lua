@@ -74,5 +74,5 @@ vim.api.nvim_create_autocmd(
 
 vim.api.nvim_create_autocmd(
   "FileType",
-  { pattern = { "text", "markdown" }, command = "setlocal tw=80" }
+  { pattern = { "text", "markdown", "mdx" }, command = "setlocal tw=80" }
 )
