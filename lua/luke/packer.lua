@@ -21,6 +21,14 @@ return require('packer').startup(function(use)
 	  end
   })
 
+  use({
+	  'ellisonleao/gruvbox.nvim',
+	  as = 'gruvbox',
+	  config = function()
+		  vim.cmd('colorscheme gruvbox')
+	  end
+  })
+
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
 
