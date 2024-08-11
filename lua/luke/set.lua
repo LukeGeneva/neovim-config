@@ -84,7 +84,7 @@ vim.api.nvim_create_autocmd(
 
 vim.api.nvim_create_augroup('AutoFormatting', {})
 vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = '*.go',
+  pattern = {'*.go', '*.html'},
   group = 'AutoFormatting',
   callback = function()
     vim.lsp.buf.format({ async = true })
