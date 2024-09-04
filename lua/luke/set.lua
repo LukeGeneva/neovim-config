@@ -89,4 +89,4 @@ vim.api.nvim_create_autocmd('BufWritePre', {
   end,
 })
 
-vim.keymap.set("n", "<leader>gp", ":G push<CR>")
+vim.keymap.set("n", "<leader>gp", ":!git push<CR>")
