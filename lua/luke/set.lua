@@ -94,4 +94,3 @@ vim.api.nvim_create_autocmd('BufWritePre', {
 vim.keymap.set("n", "<leader>gp", ":!git push<CR>")
 
 vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
-

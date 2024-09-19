@@ -21,17 +21,10 @@ return require('packer').startup(function(use)
   }
 
   use({
-	  'NLKNguyen/papercolor-theme',
-	  as = 'PaperColor',
-	  config = function()
-		  vim.cmd('colorscheme PaperColor')
-	  end
-  })
-
-  use({
 	  'ellisonleao/gruvbox.nvim',
 	  as = 'gruvbox',
 	  config = function()
+          require('gruvbox').setup()
 		  vim.cmd('colorscheme gruvbox')
 	  end
   })
