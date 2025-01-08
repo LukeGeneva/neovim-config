@@ -10,6 +10,11 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	['<C-y>'] = cmp.mapping.confirm({ select = true }),
 	['<C-Space>'] = cmp.mapping.complete(),
 })
+cmp.setup({
+    completion = {
+        autocomplete = {}
+    }
+})
 
 lsp.set_preferences({ })
 
