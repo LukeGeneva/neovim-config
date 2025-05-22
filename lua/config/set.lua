@@ -1,5 +1,3 @@
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 vim.opt.guicursor = ""
@@ -71,11 +69,6 @@ vim.keymap.set("n", ";", ":")
 
 vim.api.nvim_create_autocmd(
   "FileType",
-  { pattern = { "html", "javascript", "typescript", "json", "typescriptreact", "javascriptreact" }, command = "setlocal shiftwidth=2 softtabstop=2 tabstop=2" }
-)
-
-vim.api.nvim_create_autocmd(
-  "FileType",
   { pattern = { "text", "markdown", "mdx" }, command = "setlocal tw=80" }
 )
 
@@ -92,5 +85,5 @@ vim.api.nvim_create_autocmd('BufWritePre', {
 })
 
 vim.keymap.set("n", "<leader>gp", ":!git push<CR>")
-
-vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>lsp", ":LspRestart<CR>")
